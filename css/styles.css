@@ -1,3 +1,9 @@
+:root {
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --accents: gold;
+}
+
 * {
     box-sizing: border-box;
 }
