@@ -6,9 +6,9 @@ header {
 }
 
 header h1, header nav {
-    margin: 10px;
+    margin: 32px;
 }
 
 header nav {
-    margin-top: 20px;
+    margin-top: 40px;
 }
