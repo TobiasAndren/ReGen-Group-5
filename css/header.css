@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header h1, header nav {
+    margin: 10px;
+}
+
+header nav {
+    margin-top: 20px;
+}
