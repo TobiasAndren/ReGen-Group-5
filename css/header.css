@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #3D3D3D;
+}
+
+header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .tabs {
+    display: flex;
+    gap: 60px;
+}
+
+header .tabs a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
