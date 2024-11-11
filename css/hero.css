@@ -10,21 +10,58 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: transform 0.2s ease-out;
 }
 
 .background {
     z-index: 1;
-    transform: translateZ(-1px) scale(2);
+    animation: background-scroll 2s linear;
 }
 
+/* Mellanlagret - det scrollar snabbare än bakgrunden för djup */
 .middle {
     z-index: 2;
-    transform: translateZ(-0.5px) scale(1.5);
+    animation: middle-scroll 3s linear infinite;
 }
 
+/* Förgrundslager - detta lagret ska fadea till vitt */
 .foreground {
     z-index: 3;
-    transform: translateZ(0);
+    animation: foreground-scroll 4s linear infinite;
+}
+
+.underhero {
+    width: 100%;
+    height: 5000px;
+    background-color: white;
+    position: relative;
+}
+  
+  @keyframes background-scroll {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes middle-scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(1.5)
+    }
+}
+
+@keyframes foreground-scroll {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.1)
+    }
 }
 
 .underhero {
