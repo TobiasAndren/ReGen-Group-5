@@ -26,3 +26,9 @@
     z-index: 3;
     transform: translateZ(0);
 }
+
+.underhero {
+    width: 100%;
+    height: 5000px;
+    background-color: white;
+}
