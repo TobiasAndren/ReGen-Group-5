@@ -1,0 +1,12 @@
+.animation {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    object-fit: cover;
+}
+
+div.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
