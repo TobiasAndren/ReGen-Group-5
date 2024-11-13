@@ -1,0 +1,34 @@
+footer {
+    width: 100vw;
+    height: 400px;
+    background-color: #444;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact {
+    font-size: 1.3rem;
+    width: 400px;
+}
+
+.footerLinks{
+    height: 300px;
+    border-right: 2px solid white;
+    margin-top: 50px;
+}
+
+footer h1, footer a{
+    color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+li {
+    list-style-type: none;
+}
