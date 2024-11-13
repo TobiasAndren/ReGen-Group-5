@@ -1,15 +1,17 @@
+// Parallax scroll function
+
 document.addEventListener("scroll", function() {
     let scrollPosition = window.scrollY;
 
-    // Parallax för bakgrund
+    // Parallax background
     let background = document.querySelector('.background');
-    background.style.transform = `translateY(${1.09 + scrollPosition * 0.0004})`; // Långsamt rörelse uppåt
+    background.style.transform = `translateY(${scrollPosition * 0.2}px) scale(${1 + scrollPosition * 0.00002})`;
 
-    // Parallax för middle (berg på var sin sida)
+    // Parallax middle/side mountains
     let middle = document.querySelector('.middle');
-    middle.style.transform = `scale(${1 + scrollPosition * 0.0002})`; // Gör större vid scroll
+    middle.style.transform = `scale(${1 + scrollPosition * 0.0002})`; 
 
-    // Texten som kommer in från sidan
+    // ReGen title text slide
     let h1 = document.querySelector('h1');
     if (scrollPosition > 50) {
         h1.style.opacity = 1;

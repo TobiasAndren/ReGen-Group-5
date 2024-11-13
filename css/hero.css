@@ -26,6 +26,7 @@
 
 .background {
     z-index: -1;
+    scale: 1.1;
     background-position: 0%;
 }
 
@@ -45,7 +46,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 10%;
+    height: 15%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
     z-index: 4; 
 }
