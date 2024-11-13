@@ -1,6 +1,10 @@
 // Parallax scroll function
 
 document.addEventListener("scroll", function() {
+
+    // No parallax for mobile
+    if (window.innerWidth > 768) {
+
     let scrollPosition = window.scrollY;
 
     // Parallax background
@@ -23,4 +27,5 @@ document.addEventListener("scroll", function() {
             h1.style.transform = `translateY(-100%)`; 
         }
     });
+}
 })
