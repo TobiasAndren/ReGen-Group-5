@@ -12,8 +12,11 @@
     position: absolute;
     font-family: "IBM Plex Sans", sans-serif;
     color: #FFFFFF;
-    font-size: 4rem;
-    transform: translateX(-100%);
+    font-size: 5rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+    opacity: 1;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 .parallax-layer {
@@ -26,7 +29,6 @@
 
 .background {
     z-index: -1;
-    scale: 1.1;
     background-position: 0%;
 }
 

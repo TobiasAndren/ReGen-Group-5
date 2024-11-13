@@ -12,9 +12,15 @@ document.addEventListener("scroll", function() {
     middle.style.transform = `scale(${1 + scrollPosition * 0.0002})`; 
 
     // ReGen title text slide
-    let h1 = document.querySelector('h1');
-    if (scrollPosition > 50) {
-        h1.style.opacity = 1;
-        h1.style.transform = `translateX(0)`;
-    }
-});
+    document.addEventListener("scroll", function() {
+        let scrollPosition = window.scrollY;
+        let h1 = document.querySelector('.hero h1'); 
+        let movement = scrollPosition * 0.8; 
+    
+        if (scrollPosition > 0) {
+            h1.style.transform = `translateY(calc(-100% + ${movement}px))`; 
+        } else {
+            h1.style.transform = `translateY(-100%)`; 
+        }
+    });
+})
