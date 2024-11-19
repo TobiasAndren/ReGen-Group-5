@@ -15,21 +15,50 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="logo-container">
+            <img src="/assets/images/logo.svg" alt="Logotyp och namn på företaget">
+            <h1>ReGen</h1>
+        </div>
 
+        <nav>
+            <ul class="nav-items">
+                <li class="lang-toggle">
+                    <span>SE/EN</span>
+                    <div class="flag-container">
+                        <img src="/assets/images/seflag.svg" alt="Sveriges flagga" id="se-flag" class="flag visible">
+                        <img src="/assets/images/ukflag.svg" alt="Storbritanniens flagga" id="uk-flag" class="flag">
+                    </div>
+                </li>
+                <li class="cart-icon">
+                    <span>KUNDVAGN</span>
+                    <a href="#"><img src="/assets/images/cart.svg" alt="Kundvagns ikon"></a>
+                </li>
+                <li class="menu-icon">
+                    <span>MENY</span>
+                    <a href="#"><img src="/assets/images/menu.svg" alt="Meny ikon"></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <section aria-label="hero">
             <div class="hero">
-
+                <img src="/assets/images/hero-background.png" alt="Bakgrundsbild på snötäckta berg och himmel" class="parallax-layer background">
+                <img src="/assets/images/hero-middle.png" alt="Bild på berg" class="parallax-layer middle">
+                <h1>Framtidens mode, idag.</h1>
+                <img src="/assets/images/hero-foreground.png" alt="Bild på berg och en människa" class="parallax-layer foreground">
             </div>
-        </section>
-        <section aria-label="motivation">
 
+            <img src="/assets/images/arrow.svg" alt="Nedåtpil för att scrolla till nästa sektion" class="scroll-arrow">
+            
+            <div class="herofade"></div>
+            
+        </section>        
+        <section aria-label="motivation">
+            
         </section>
         <section aria-label="animation">
-
+            
         </section>
 
     </main>
