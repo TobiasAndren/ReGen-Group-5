@@ -9,7 +9,7 @@ scrollArrow.addEventListener('click', () => {
 
 // Toggles flag/selected language
 
-document.querySelector('.lang-toggle .flag-container').addEventListener('click', function () {
+document.querySelector('.lang-toggle').addEventListener('click', function () {
     const ukFlag = document.getElementById('uk-flag');
     const seFlag = document.getElementById('se-flag');
 
@@ -21,3 +21,4 @@ document.querySelector('.lang-toggle .flag-container').addEventListener('click',
         ukFlag.classList.add('visible');
     }
 });
+
