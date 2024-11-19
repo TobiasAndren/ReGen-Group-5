@@ -5,35 +5,36 @@
 }
 
 header {
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.125rem;
-    position: absolute;
-    width: 100%;
+    padding: 1rem 2.5rem;
     z-index: 1000;
 }
 
-.logo img {
-    width: 5rem;
-    margin-left: 2.5rem;
-    margin-top: 1.39rem;
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
 }
 
-.company-name {
-    display: flex;
-    color: #000000;
-    position: absolute;
-    margin-left: 10rem;
+.logo-container img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-container h1 {
+    font-size: 2rem;
 }
 
 nav .nav-items {
     display: flex;
     align-items: center;
     list-style: none;
-    margin-top: 1.81rem;
-    margin-right: 2.5rem;
     gap: 3rem;
 }
 
@@ -78,5 +79,9 @@ nav .nav-items {
 @media (max-width: 768px) {
     .nav-items li:not(.menu-icon) {
         display: none;
+    }
+
+    header {
+        padding: 1rem 1rem;
     }
 }
