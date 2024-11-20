@@ -43,7 +43,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    cursor: grab;
     background: linear-gradient(124deg, #D3D3D3 4.36%, #B3B3B3 88.22%);
+}
+
+.product-card:active {
+    cursor: grabbing;
 }
 
 .rotation-icon {

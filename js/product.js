@@ -85,15 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
         isDragging = true;
         hasMoved = false;
         startX = e.pageX;
-        image.style.cursor = "grabbing";
       });
   
       // Release mousebutton
       document.addEventListener("mouseup", () => {
         isDragging = false;
-        if (!hasMoved) {
-          image.style.cursor = "grab";
-        }
       });
   
       // Drag to rotate
