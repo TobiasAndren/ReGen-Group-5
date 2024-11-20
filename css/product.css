@@ -115,3 +115,24 @@
 .color-button[data-color="gray"] {
     background-color: #C9C9C9;
 }
+
+@media (max-width: 768px) {
+    .products h1 {
+        font-size: 2rem;
+    }
+    
+    .products {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem; 
+    }
+
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+
+    .color-button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
