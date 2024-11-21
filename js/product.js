@@ -112,19 +112,22 @@ document.addEventListener("DOMContentLoaded", function () {
       // Rotation on touchscreen (mobile)
       let startTouchX = 0;
       image.addEventListener("touchstart", (e) => {
-        e.preventDefault();
-        isDragging = true;
-        hasMoved = false;
-        startTouchX = e.touches[0].pageX;
-        image.style.cursor = "grabbing";
-      });
-  
-      image.addEventListener("touchend", () => {
-        isDragging = false;
-        if (!hasMoved) {
-          image.style.cursor = "grab";
+        if (e.touches.length > 1) {
+          
+          e.preventDefault();
+          isDragging = true;
+          hasMoved = false;
+          startTouchX = e.touches[0].pageX;
+          image.style.cursor = "grabbing";
         }
-      });
+        });
+        
+        image.addEventListener("touchend", () => {
+          isDragging = false;
+          if (!hasMoved) {
+            image.style.cursor = "grab";
+          }
+        });
   
       image.addEventListener("touchmove", (e) => {
         if (isDragging) {
