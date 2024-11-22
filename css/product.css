@@ -11,7 +11,7 @@
     margin-right: 2.5rem;
     margin-top: 4.5rem;
     font-family: "IBM Plex Sans", sans-serif;
-    color: #000000;
+    color: #1A1A18;
 }
 
 .products h1 {
@@ -148,6 +148,36 @@
     display: none;
 }
 
+.materials {
+    top: 9.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.materials img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2.5rem;
+}
+
+.materials p {
+    font-size: 2rem;
+    max-width: 70%;
+    margin: 2rem;
+}
+
+.under-line {
+    width: 30%;
+    height: 4px;
+    background-color: #1A1A18;
+    margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
     .products h1 {
         font-size: 2rem;
@@ -166,6 +196,16 @@
     .color-button {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .materials {
+        top: 3rem;
+    }
+    .materials img {
+        max-width: 3rem;
+    }
+    .materials p {
+        font-size: 1.25rem;
     }
 }
 
