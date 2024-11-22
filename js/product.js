@@ -174,17 +174,41 @@ document.addEventListener("DOMContentLoaded", function () {
       updateImage("bottle");
     });
   });
+
   
+  // Tooltip to let user know how to rotate items on mobile
+  document.addEventListener("DOMContentLoaded", () => {
+    const tooltips = document.querySelectorAll(".tooltip");
   
+    tooltips.forEach((tooltip) => {
+      const closeButton = tooltip.querySelector(".tooltip-close");
   
+      // Start automatic closing
+      const startCountdown = () => {
+        const autoCloseTimeout = setTimeout(() => {
+          tooltip.classList.add("hidden"); 
+        }, 5000);
   
+        // Turn off tooltip manually when X is clicked
+        closeButton.addEventListener("click", () => {
+          tooltip.classList.add("hidden");
+          clearTimeout(autoCloseTimeout); // Manual closing overrides automatic closing
+        });
+      };
   
+      // Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              startCountdown(); // Start automatic closing countdown when tooltip is visible
+              observer.unobserve(tooltip); 
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(tooltip);
+    });
+  });
   
-  
-  
-  
-  
-  
-  
-  
-    
