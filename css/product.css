@@ -16,7 +16,20 @@
 
 .products h1 {
     font-size: 3rem;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
+}
+  
+.coming-soon-box {
+    font-size: 2rem;
+    padding: 0.7rem;
+    color: #FFFFFF;
+    background-color: #1A1A18;
 }
 
 .product-row {
@@ -117,6 +130,10 @@
     background-color: #47493F;
 }
 
+.color-button[data-color="black"] {
+    background-color: #131311;
+}
+
 .color-button[data-color="gray"] {
     background-color: #C9C9C9;
 }
@@ -181,6 +198,10 @@
 @media (max-width: 768px) {
     .products h1 {
         font-size: 2rem;
+    }
+
+    .coming-soon-box {
+        font-size: 1rem;
     }
     
     .products {
