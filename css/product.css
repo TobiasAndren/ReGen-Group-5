@@ -127,7 +127,7 @@
 }
   
 .color-button[data-color="green"] {
-    background-color: #47493F;
+    background-color: #3F4E3B;
 }
 
 .color-button[data-color="black"] {
@@ -136,6 +136,40 @@
 
 .color-button[data-color="gray"] {
     background-color: #C9C9C9;
+}
+
+.arrow-button {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arrow {
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  .right-arrow {
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  .arrow-button img {
+    width: 2rem;
+    height: 3rem;
+}
+
+.image-counter {
+    position: absolute;
+    bottom: 1rem;
+    color: #1A1A18;
+    font-size: 1.25rem;
 }
 
 .tooltip {
@@ -217,6 +251,14 @@
     .color-button {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .left-arrow {
+        left: 1rem;
+    }
+
+    .right-arrow {
+        right: 1rem;
     }
 
     .materials {
