@@ -28,7 +28,7 @@
 .coming-soon-box {
     font-size: 2rem;
     padding: 0.7rem;
-    color: #FFFFFF;
+    color: #EFEFEF;
     background-color: #1A1A18;
 }
 
@@ -176,7 +176,7 @@
     position: absolute;
     bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: #EFEFEF;
     padding: 0.8rem;
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -189,7 +189,7 @@
 .tooltip-close {
     background: none;
     border: none;
-    color: white;
+    color: #EFEFEF;
     font-size: 1rem;
     margin-left: 1rem;
     cursor: pointer;
