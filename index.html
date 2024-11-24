@@ -53,8 +53,8 @@
             
             <div class="herofade"></div>
             
-        </section>        
-        
+        </section>
+
         <section aria-label="motivation">
             
         </section>
@@ -63,10 +63,122 @@
             
         </section>
 
-        <section aria-label="products">
+        <section aria-label="products" class="products">
+          <div class="heading-container">
+            <h1>Frilufts-kollektion</h1>
+            <div class="coming-soon-box">
+              Kommer snart
+            </div>
+          </div>
+          
+          <div class="product-row">
+            <!-- Produkt 1: Jacka -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/images/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="jacket-image" src="assets/products/jacket/jacket-beige/jacket1.png" alt="Jacka">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="jacket" data-color="beige" aria-label="Beige Jacka"></button>
+                  <button class="color-button" data-product="jacket" data-color="green" aria-label="Grön Jacka"></button>
+                </div>
+                <p class="product-name">ReGen Täckjacka</p>
+                <p class="product-price">SEK 4 999</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 2: Byxor -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/images/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="pants-image" src="assets/products/pants/pants-beige/pants1.png" alt="Byxor">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="pants" data-color="beige" aria-label="Byxor i beige färg"></button>
+                  <button class="color-button" data-product="pants" data-color="green" aria-label="Byxor i grön färg"></button>
+                </div>
+                <p class="product-name">ReGen Vandringsbyxor</p>
+                <p class="product-price">SEK 1 999</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 3: Ryggsäck -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/images/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="backpack-image" src="/assets/products/backpack/backpack1.png" alt="Ryggsäck">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="backpack" data-color="black" aria-label="Ryggsäck i beige färg"></button>
+                </div>
+                <p class="product-name">ReGen Ryggsäck</p>
+                <p class="product-price">SEK 1 199</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 4: Vattenflaska -->
+            <div class="product-container">
+              <div class="product-card" id="bottle-card">
+                <img id="bottle-image" src="assets/products/bottle/bottle1.png" alt="Vattenflaska">
+                <button class="arrow-button left-arrow" id="prev-button" aria-label="Föregående bild">
+                  <img src="/assets/images/arrow_left.svg" alt="Vänster pil">
+                </button>
+                <button class="arrow-button right-arrow" id="next-button" aria-label="Nästa bild">
+                  <img src="/assets/images/arrow_right.svg" alt="Höger pil">
+                </button>
+                <div class="image-counter" id="image-counter">1/5</div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="bottle" data-color="gray" aria-label="Flaska i grå färg"></button>
+                </div>
+                <p class="product-name">ReGen Vattenflaska 0,7L</p>
+                <p class="product-price">SEK 349</p>
+              </div>
+            </div>
+        
+          </div>
 
+          <article aria-label="material info" class="materials">
+            <img src="/assets/images/logogreen.svg" alt="Alternativ logotyp i grön färg">
+            <p class="section-1">
+                Våra produkter är utrustade med innovativa glow-strips som laddas av naturliga och artificiella ljuskällor.
+            </p>
+            <p class="section-2">
+                Under dagen absorberar dessa miljövänliga fosforescerande material energi från solen, och när mörkret faller avger de ett mjukt, självlysande sken.
+            </p>
+            <p class="section-3">
+                För ökad synlighet utan behov av batterier eller elektricitet.
+            </p>
+            <span class="under-line"></span>
+        </article>
+        
         </section>
-
+        
     </main>
     <footer>
 
