@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.logo-container img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+}
+
+nav .nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-items li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-items a {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.flag-container {
+    position: relative;
+    width: 2rem;
+    height: 1.5rem; 
+}
+
+.flag {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+}
+
+.flag.visible {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.flag-container:hover {
+    cursor: pointer;
+}
+
+.nav-items li:hover {
+    opacity: 50%;
+}
+
+@media (max-width: 768px) {
+    .nav-items li:not(.menu-icon) {
+        display: none;
+    }
+
+    header {
+        padding: 1rem 1rem;
+    }
+}

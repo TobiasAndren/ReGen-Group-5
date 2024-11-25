@@ -15,28 +15,181 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="logo-container">
+            <img src="/assets/icons/logoblack.svg" alt="Logotyp och namn på företaget">
+            <h1>ReGen</h1>
+        </div>
 
+        <nav>
+            <ul class="nav-items">
+                <li class="lang-toggle">
+                    <span>SE/EN</span>
+                    <div class="flag-container">
+                        <img src="/assets/icons/seflag.svg" alt="Sveriges flagga" id="se-flag" class="flag visible">
+                        <img src="/assets/icons/ukflag.svg" alt="Storbritanniens flagga" id="uk-flag" class="flag">
+                    </div>
+                </li>
+                <li class="cart-icon">
+                    <span>KUNDVAGN</span>
+                    <a href="#"><img src="/assets/icons/cart.svg" alt="Kundvagns ikon"></a>
+                </li>
+                <li class="menu-icon">
+                    <span>MENY</span>
+                    <a href="#"><img src="/assets/icons/menu.svg" alt="Meny ikon"></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <section aria-label="hero">
             <div class="hero">
+
                 
+                <img src="/assets/images/hero-background.png" alt="Bakgrundsbild på snötäckta berg och himmel" class="parallax-layer background">
+                <img src="/assets/images/hero-middle.png" alt="Bild på berg" class="parallax-layer middle">
+                <h1>Framtidens mode, idag.</h1>
+                <img src="/assets/images/hero-foreground.png" alt="Bild på berg och en människa" class="parallax-layer foreground">
+
             </div>
+
+            <img src="/assets/icons/arrow_down.svg" alt="Nedåtpil för att scrolla till nästa sektion" class="scroll-arrow">
+            
+            <div class="herofade"></div>
+            
         </section>
+
         <section aria-label="motivation">
             <div class="motivation">
                 <img src="" alt="">
                 <p class="motivationText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio ipsum dignissimos non porro.</p>
             </div>
+
         </section>
+        
         <section aria-label="animation">
+
             <div class="animation">
                 <video autoplay loop muted class="animation" src="css/5113-183299921_small.mp4"></video>
             </div>
+        </section>                  
+
+        <section aria-label="products" class="products">
+          <div class="heading-container">
+            <h1>Frilufts-kollektion</h1>
+            <div class="coming-soon-box">
+              Kommer snart
+            </div>
+          </div>
+          
+          <div class="product-row">
+            <!-- Produkt 1: Jacka -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/icons/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="jacket-image" src="assets/products/jacket/jacket-beige/jacket1.png" alt="Jacka">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="jacket" data-color="beige" aria-label="Beige Jacka"></button>
+                  <button class="color-button" data-product="jacket" data-color="green" aria-label="Grön Jacka"></button>
+                </div>
+                <p class="product-name">ReGen Täckjacka</p>
+                <p class="product-price">SEK 4 999</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 2: Byxor -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/icons/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="pants-image" src="assets/products/pants/pants-beige/pants1.png" alt="Byxor">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="pants" data-color="beige" aria-label="Byxor i beige färg"></button>
+                  <button class="color-button" data-product="pants" data-color="green" aria-label="Byxor i grön färg"></button>
+                </div>
+                <p class="product-name">ReGen Vandringsbyxor</p>
+                <p class="product-price">SEK 1 999</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 3: Ryggsäck -->
+            <div class="product-container">
+              <div class="product-card">
+                <div class="rotate-icon-container">
+                  <span class="rotate-text">Rotera</span>
+                  <img class="rotation-icon" src="/assets/icons/rotate.svg" alt="Ikon för rotering">
+                </div>
+                <img id="backpack-image" src="/assets/products/backpack/backpack1.png" alt="Ryggsäck">
+                <div class="tooltip" id="jacket-tooltip">
+                  ✌️ Använd två fingrar för att rotera
+                  <button class="tooltip-close" id="jacket-tooltip-close">✕</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="backpack" data-color="black" aria-label="Ryggsäck i beige färg"></button>
+                </div>
+                <p class="product-name">ReGen Ryggsäck</p>
+                <p class="product-price">SEK 1 199</p>
+              </div>
+            </div>
+        
+            <!-- Produkt 4: Vattenflaska -->
+            <div class="product-container">
+              <div class="product-card" id="bottle-card">
+                <img id="bottle-image" src="assets/products/bottle/bottle1.png" alt="Vattenflaska">
+                <button class="arrow-button left-arrow" id="prev-button" aria-label="Föregående bild">
+                  <img src="/assets/icons/arrow_left.svg" alt="Vänster pil">
+                </button>
+                <button class="arrow-button right-arrow" id="next-button" aria-label="Nästa bild">
+                  <img src="/assets/icons/arrow_right.svg" alt="Höger pil">
+                </button>
+                <div class="image-counter" id="image-counter">1/5</div>
+              </div>
+              <div class="product-info">
+                <div class="color-selector">
+                  <button class="color-button" data-product="bottle" data-color="gray" aria-label="Flaska i grå färg"></button>
+                </div>
+                <p class="product-name">ReGen Vattenflaska 0,7L</p>
+                <p class="product-price">SEK 349</p>
+              </div>
+            </div>
+        
+          </div>
+
+          <article aria-label="material info" class="materials">
+            <img src="/assets/icons/logogreen.svg" alt="Alternativ logotyp i grön färg">
+            <p class="section-1">
+                Våra produkter är utrustade med innovativa glow-strips som laddas av naturliga och artificiella ljuskällor.
+            </p>
+            <p class="section-2">
+                Under dagen absorberar dessa miljövänliga fosforescerande material energi från solen, och när mörkret faller avger de ett mjukt, självlysande sken.
+            </p>
+            <p class="section-3">
+                För ökad synlighet utan behov av batterier eller elektricitet.
+            </p>
+            <span class="under-line"></span>
+        </article>
+        
         </section>
-        <section aria-label="newsletter">
+      
+              <section aria-label="newsletter">
             <div class="newsletter">
                 <img src="css/newsletter-img.svg" alt="" class="newsletterImage">
                 <div class="newsletterForm">
@@ -50,6 +203,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer class="footer">
         <div class="footerContent">
