@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.getElementById("next-button-long");
     const slideCounter = document.getElementById("slide-image-counter");
     let currentSlide = 0;
-    let autoSlideInterval; // Variabel för intervallet
-    const autoSlideTime = 5000; // Tid mellan slides i millisekunder
+    let autoSlideInterval; 
+    const autoSlideTime = 5000; 
 
     function updateSlides() {
         slides.forEach((slide) => {
@@ -57,27 +57,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function stopAutoSlide() {
-        clearInterval(autoSlideInterval); // Stoppa intervallet
+        clearInterval(autoSlideInterval); 
     }
 
     function resetAutoSlide() {
-        stopAutoSlide(); // Stoppa nuvarande intervall
-        startAutoSlide(); // Starta om intervallet
+        stopAutoSlide(); 
+        startAutoSlide(); 
     }
 
     prevButton.addEventListener("click", () => {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         updateSlides();
-        resetAutoSlide(); // Återställ intervallet
+        resetAutoSlide(); 
     });
 
     nextButton.addEventListener("click", () => {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlides();
-        resetAutoSlide(); // Återställ intervallet
+        resetAutoSlide(); 
     });
 
-    updateSlides(); // Visa första sliden
-    startAutoSlide(); // Starta automatisk slideväxling
+    updateSlides(); 
+    startAutoSlide();
 });
 
