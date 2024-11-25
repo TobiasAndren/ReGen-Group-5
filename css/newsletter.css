@@ -47,7 +47,7 @@ input {
     border: none;
 }
 
-button{
+.newsletterButton{
     border: none;
     object-fit: cover;
     background-image: url(../assets/icons/arrow_subscribe.svg);
