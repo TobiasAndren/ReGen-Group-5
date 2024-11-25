@@ -1,9 +1,10 @@
 .newsletter{
     background-color: #1A1A18;
-    height: 100vh;
+    height: 42.5vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 }
 
 .newsletterForm{
@@ -17,9 +18,10 @@
     margin-bottom: 5rem;
 }
 
-.newsletterImage{
-    width: 45rem;
-    height: 42.5rem;
+.newsletterImageContainer img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
 }
 
 h2 {
