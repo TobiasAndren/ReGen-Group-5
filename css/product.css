@@ -199,6 +199,11 @@
     display: none;
 }
 
+.materials-container {
+    width: 100vw;
+    height: 100vh;
+}
+
 .materials {
     top: 9.5rem;
     position: relative;

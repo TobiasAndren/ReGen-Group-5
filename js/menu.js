@@ -3,7 +3,7 @@
 const scrollArrow = document.querySelector('.scroll-arrow');
 
 scrollArrow.addEventListener('click', () => {
-    const nextSection = document.querySelector('.underhero'); // Change this to motivation when section exists
+    const nextSection = document.querySelector('.motivation'); // Change this to motivation when section exists
     nextSection.scrollIntoView({ behavior: 'smooth' });
 });
 
