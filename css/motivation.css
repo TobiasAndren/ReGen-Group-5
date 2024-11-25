@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .motivation-logo {
@@ -63,22 +64,87 @@
 }
 
 .slide-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .slide-1 img {
     position: absolute;
-    left: 2.5rem;
-    width: 41.67%;
+    width: 34.5rem;
     height: 38.5rem;
-    object-fit: contain;
+    left: 2.5rem;
+    object-fit: cover;
 }
 
 .slide-1 p {
     position: absolute;
     right: 2.5rem;
-    max-width: 44rem;
+    max-width: 40rem;
+}
 
+.slide-2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-2 img {
+    position: absolute;
+    width: 34.5rem;
+    height: 38.5rem;
+    left: 2.5rem;
+    object-fit: cover;
+}
+
+.slide-2 p {
+    position: absolute;
+    right: 2.5rem;
+    max-width: 40rem;
+}
+
+.slide-3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-3 img {
+    position: absolute;
+    width: 34.5rem;
+    height: 38.5rem;
+    left: 2.5rem;
+    object-fit: cover;
+}
+
+.slide-3 p {
+    position: absolute;
+    right: 2.5rem;
+    max-width: 40rem;
+}
+
+.highlight {
+    color: #26CCA6;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+}
+
+.slide.active {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

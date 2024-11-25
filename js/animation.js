@@ -29,3 +29,55 @@ document.addEventListener("scroll", function() {
     });
 }
 })
+
+// Slideshow for motivation page
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.getElementById("prev-button-long");
+    const nextButton = document.getElementById("next-button-long");
+    const slideCounter = document.getElementById("slide-image-counter");
+    let currentSlide = 0;
+    let autoSlideInterval; // Variabel för intervallet
+    const autoSlideTime = 5000; // Tid mellan slides i millisekunder
+
+    function updateSlides() {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+        slides[currentSlide].classList.add("active");
+        slideCounter.textContent = `${currentSlide + 1}/${slides.length}`;
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlides();
+        }, autoSlideTime);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval); // Stoppa intervallet
+    }
+
+    function resetAutoSlide() {
+        stopAutoSlide(); // Stoppa nuvarande intervall
+        startAutoSlide(); // Starta om intervallet
+    }
+
+    prevButton.addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlides();
+        resetAutoSlide(); // Återställ intervallet
+    });
+
+    nextButton.addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlides();
+        resetAutoSlide(); // Återställ intervallet
+    });
+
+    updateSlides(); // Visa första sliden
+    startAutoSlide(); // Starta automatisk slideväxling
+});
+
