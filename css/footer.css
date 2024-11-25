@@ -11,11 +11,29 @@
 }
 
 .footerContent {
-    height: 646px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
+}
+
+.footerLinkContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkPos {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 2rem;
 }
 
 footer img:hover {
