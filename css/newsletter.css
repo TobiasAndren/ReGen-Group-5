@@ -1,0 +1,56 @@
+.newsletter{
+    background-color: #1A1A18;
+    height: 680px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.newsletterForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.newsletterImage{
+    width: 45rem;
+    height: 42.5rem;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.newsletterText{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: start;
+}
+
+input {
+    height: 3.8rem;
+    width: 30rem;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    border: none;
+}
+
+button{
+    border: none;
+    object-fit: cover;
+    background-image: url(newsletter-button.svg);
+    height: 3.8rem;
+    width: 6rem;
+}

@@ -43,10 +43,13 @@
     <main>
         <section aria-label="hero">
             <div class="hero">
+
+                
                 <img src="/assets/images/hero-background.png" alt="Bakgrundsbild på snötäckta berg och himmel" class="parallax-layer background">
                 <img src="/assets/images/hero-middle.png" alt="Bild på berg" class="parallax-layer middle">
                 <h1>Framtidens mode, idag.</h1>
                 <img src="/assets/images/hero-foreground.png" alt="Bild på berg och en människa" class="parallax-layer foreground">
+
             </div>
 
             <img src="/assets/icons/arrow_down.svg" alt="Nedåtpil för att scrolla till nästa sektion" class="scroll-arrow">
@@ -56,12 +59,19 @@
         </section>
 
         <section aria-label="motivation">
-            
+            <div class="motivation">
+                <img src="" alt="">
+                <p class="motivationText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio ipsum dignissimos non porro.</p>
+            </div>
+
         </section>
         
         <section aria-label="animation">
-            
-        </section>
+
+            <div class="animation">
+                <video autoplay loop muted class="animation" src="css/5113-183299921_small.mp4"></video>
+            </div>
+        </section>                  
 
         <section aria-label="products" class="products">
           <div class="heading-container">
@@ -178,10 +188,41 @@
         </article>
         
         </section>
+      
+              <section aria-label="newsletter">
+            <div class="newsletter">
+                <img src="css/newsletter-img.svg" alt="" class="newsletterImage">
+                <div class="newsletterForm">
+                    <h2>Prenumerera på vårt nyhetsbrev!</h2>
+                    <p class="newsletterText">Registrera dig nu och få 10% rabatt på din nästa beställning. Var bland de första att få reda på speciella erbjudanden, våra klimatinitiativ och exklusiva produkter!</p>
+                    <div class="inputContainer">
+                        <input type="text" class="inputField" placeholder="example.mail@gmail.com">
+                        <button type="submit">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footerContent">
+            <div>
+                <a href=""><img src="css/instagram.svg" alt="instagram"></a>
+                <a href=""><img src="css/facebook.svg" alt="facebook"></a>
+            </div>
+            <a href="">Sekretesspolicy</a>
+            <a href="">Användarvillkor</a>
+            <a href="">Försäljning & Återbetalning</a>
+            <a href="">Site Map</a>
+            <div class="smallContainer">
+                <small class="smallMarginLeft">© Copyright 2024 ReGen</small>
+                <div class="locationContainer">
+                    <img src="css/locationtag.svg" alt="" class="locationTag">
+                    <small class="smallMarginRight">Berggatan 8A, 411 04 Göteborg</small>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/animation.js"></script>
