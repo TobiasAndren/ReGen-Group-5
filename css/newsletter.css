@@ -50,7 +50,10 @@ input {
 button{
     border: none;
     object-fit: cover;
-    background-image: url(newsletter-button.svg);
+    background-image: url(../assets/icons/arrow_subscribe.svg);
+    background-repeat: no-repeat;
+    background-color: #26CCA6;
+    background-position: center;
     height: 3.8rem;
     width: 6rem;
 }

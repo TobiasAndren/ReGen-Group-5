@@ -9,20 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
     jacket: {
       currentFrame: 1,
       currentColor: "beige",
-      imgPath: "/assets/products/jacket/",
+      imgPath: "assets/products/jacket/",
     },
     pants: {
       currentFrame: 1,
       currentColor: "beige",
-      imgPath: "/assets/products/pants/",
+      imgPath: "assets/products/pants/",
     },
     backpack: {
       currentFrame: 1, // Only one color for backpack but will still rotate
-      imgPath: "/assets/products/backpack/",
+      imgPath: "assets/products/backpack/",
     },
     bottle: {
       currentFrame: 1, // 5 different images for bottle and will not rotate
-      imgPath: "/assets/products/bottle/",
+      imgPath: "assets/products/bottle/",
     },
   };
 
