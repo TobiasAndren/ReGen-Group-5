@@ -28,6 +28,7 @@ footer img {
 }
 
 footer a {
+    cursor: pointer;
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
