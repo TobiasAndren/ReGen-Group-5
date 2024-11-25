@@ -1,34 +1,72 @@
-footer {
+.footer {
+    height: 646px;
     width: 100vw;
-    height: 400px;
-    background-color: #444;
-}
-
-.contactContainer {
+    background-color: #000;
+    background-image: url(Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
 }
 
-.contact {
-    font-size: 1.3rem;
-    width: 400px;
+.footerContent {
+    height: 646px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 }
 
-.footerLinks{
-    height: 300px;
-    border-right: 2px solid white;
-    margin-top: 50px;
+footer img:hover {
+    transform: scale(1.1);
 }
 
-footer h1, footer a{
-    color: white;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+footer img {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
 }
 
-li {
-    list-style-type: none;
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.smallContainer{
+    width: 100vw;
+    height: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.locationTag{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+small {
+    color: #eaeaeaea;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.locationContainer{
+    display: flex;
+    justify-content: center;
+}
+
+div.locationContainer small{
+    margin-left: 0.3rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
 }
