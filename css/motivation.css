@@ -56,6 +56,12 @@
     opacity: 70%;
 }
 
+.slide-image-counter {
+    position: absolute;
+    font-size: 1.25rem;
+    bottom: 4.5rem;
+}
+
 .slide-1 {
     display: flex;
     justify-content: center;
