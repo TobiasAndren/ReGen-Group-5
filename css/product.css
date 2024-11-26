@@ -22,8 +22,8 @@
 .coming-soon-box {
     font-size: 2rem;
     padding: 0.7rem;
-    color: #EFEFEF;
-    background-color: #1A1A18;
+    color: #1A1A18;
+    border: 2px solid #1A1A18;
 }
 
 .product-row {
@@ -133,7 +133,7 @@
 }
 
 .color-button[data-color="gray"] {
-    background-color: #C9C9C9;
+    background-color: #868A77;
 }
 
 .arrow-button {
@@ -149,12 +149,14 @@
 .left-arrow {
     left: 2rem;
     top: 50%;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.25));
     transform: translateY(-50%);
 }
   
   .right-arrow {
     right: 2rem;
     top: 50%;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.25));
     transform: translateY(-50%);
 }
   

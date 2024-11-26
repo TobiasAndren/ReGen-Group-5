@@ -68,3 +68,8 @@ input {
     height: 3.8rem;
     width: 6rem;
 }
+
+.newsletterButton:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
