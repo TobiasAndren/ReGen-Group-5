@@ -30,16 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
   function preloadImages(product, color) {
     if (product === "backpack") {
       const img = new Image();
-      img.src = `${productState[product].imgPath}backpack${1}.png`;
+      img.src = `${productState[product].imgPath}backpack${1}.webp`;
     } else if (product === "bottle") {
       for (let i = 1; i <= bottleImages; i++) {
         const img = new Image();
-        img.src = `${productState[product].imgPath}bottle${i}.png`;
+        img.src = `${productState[product].imgPath}bottle${i}.webp`;
       }
     } else {
       for (let i = 1; i <= numImages; i++) {
         const img = new Image();
-        img.src = `${productState[product].imgPath}${product}-${color ? color + "/" : ""}${product}${i}.png`;
+        img.src = `${productState[product].imgPath}${product}-${color ? color + "/" : ""}${product}${i}.webp`;
       }
     }
   }
@@ -58,11 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageElement = document.getElementById(`${product}-image`);
 
     if (product === "bottle") {
-      imageElement.src = `${imgPath}bottle${currentFrame}.png`;
+      imageElement.src = `${imgPath}bottle${currentFrame}.webp`;
     } else if (product === "backpack") {
-      imageElement.src = `${imgPath}backpack${currentFrame}.png`;
+      imageElement.src = `${imgPath}backpack${currentFrame}.webp`;
     } else {
-      imageElement.src = `${imgPath}${product}-${currentColor ? currentColor + "/" : ""}${product}${currentFrame}.png`;
+      imageElement.src = `${imgPath}${product}-${currentColor ? currentColor + "/" : ""}${product}${currentFrame}.webp`;
     }
   }
 
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const distance = e.pageX - startX;
         if (Math.abs(distance) > 10) {
           hasMoved = true;
-          productState[product].currentFrame += distance > 0 ? -1 : 1;
+          productState[product].currentFrame += distance > 0 ? 1 : -1;
 
           if (productState[product].currentFrame < 1) productState[product].currentFrame = numImages;
           if (productState[product].currentFrame > numImages) productState[product].currentFrame = 1;
