@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const numImages = 36;
-  const bottleImages = 2;
+  const bottleImages = 4;
 
   const productImages = document.querySelectorAll(".product-card img");
   const colorButtons = document.querySelectorAll(".color-button");
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update bottle image and counter
   function updateBottleImage() {
     const { currentFrame, imgPath } = productState.bottle;
-    bottleImage.src = `${imgPath}bottle${currentFrame}.png`;
+    bottleImage.src = `${imgPath}bottle${currentFrame}.webp`;
     imageCounter.textContent = `${currentFrame}/${bottleImages}`;
   }
 
