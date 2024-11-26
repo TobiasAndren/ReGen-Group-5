@@ -1,5 +1,5 @@
 .footer {
-    height: 646px;
+    height: 100vh;
     width: 100vw;
     font-family: "IBM Plex Sans", sans-serif;
     background-color: #000;
@@ -23,6 +23,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footerLinks {
@@ -96,4 +97,32 @@ div.locationContainer small{
     margin-left: 0.3rem;
     margin-bottom: 1rem;
     margin-right: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .linkPos {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-top: 2.5rem;
+    }
+
+    .footer {
+        background-image: none;
+        height: 70vh;
+    }
+
+    footer a {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .smallContainer {
+        height: 7rem;
+    }
+
+    footer img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }
