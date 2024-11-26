@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const distance = e.touches[0].pageX - startTouchX;
         if (Math.abs(distance) > 10) {
           hasMoved = true;
-          productState[product].currentFrame += distance > 0 ? -1 : 1;
+          productState[product].currentFrame += distance > 0 ? 1 : -1;
 
           if (productState[product].currentFrame < 1) productState[product].currentFrame = numImages;
           if (productState[product].currentFrame > numImages) productState[product].currentFrame = 1;
