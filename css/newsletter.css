@@ -1,11 +1,12 @@
 .newsletter{
     font-family: "IBM Plex Sans", sans-serif;
     background-color: #1A1A18;
-    height: 42.5vh;
+    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .newsletterForm{
@@ -13,14 +14,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletterFormContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    max-width: 30rem;
 }
 
 .newsletterImageContainer img {
-    width: 50%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -31,7 +38,7 @@ h2 {
 }
 
 .newsletterText{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 400;
     color: #fff;
     margin-top: 2rem;
@@ -45,7 +52,7 @@ h2 {
 
 input {
     height: 3.8rem;
-    width: 30rem;
+    width: 24rem;
     font-size: 1.25rem;
     padding-left: 2rem;
     border: none;
