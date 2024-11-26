@@ -1,7 +1,7 @@
 .newsletter{
     font-family: "IBM Plex Sans", sans-serif;
     background-color: #1A1A18;
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,4 +72,42 @@ input {
 .newsletterButton:hover{
     opacity: 0.9;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .newsletterImageContainer{
+        display: none;
+    }
+
+    .newsletterForm {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--darker)), url(../assets/images/subscribe_image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .newsletterFormContent {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        max-width: 22.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .newsletterText {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 17rem;
+    }
+
+    .newsletterButton {
+        width: 5.5rem;
+    }
 }
