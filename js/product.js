@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const numImages = 36;
-  const bottleImages = 5;
+  const bottleImages = 2;
 
   const productImages = document.querySelectorAll(".product-card img");
   const colorButtons = document.querySelectorAll(".color-button");

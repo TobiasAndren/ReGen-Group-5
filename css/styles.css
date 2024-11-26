@@ -1,3 +1,75 @@
+@font-face {
+    font-family: "h1 desktop";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "h1 mobile";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "p large";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "p medium desktop";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "p small desktop";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "h2 desktop";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "h2 mobile";
+    src: url(assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+:root {
+    /* Main colors */
+    --white: #EFEFEF;
+    --dark: #1A1A18;
+    --darker: #0F0F0E;
+    --accent: #26CCA6;
+
+    /* Product colors */
+    --green: #3F4E3B;
+    --beige: #918175;
+    --bottle: #C9C9C9;
+
+
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;

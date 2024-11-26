@@ -1,4 +1,5 @@
 .newsletter{
+    font-family: "IBM Plex Sans", sans-serif;
     background-color: #1A1A18;
     height: 42.5vh;
     width: 100vw;
@@ -30,7 +31,8 @@ h2 {
 }
 
 .newsletterText{
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -44,7 +46,7 @@ h2 {
 input {
     height: 3.8rem;
     width: 30rem;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     padding-left: 2rem;
     border: none;
 }
