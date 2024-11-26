@@ -34,16 +34,23 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
 
 footer img:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
 
 footer img {
     margin-bottom: 6rem;
     margin-top: 6rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2.5rem;
 }
 
 footer a {
@@ -53,7 +60,7 @@ footer a {
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 footer a:hover{
@@ -76,7 +83,7 @@ footer a:hover{
 small {
     color: #eaeaeaea;
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -88,5 +95,5 @@ small {
 div.locationContainer small{
     margin-left: 0.3rem;
     margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
