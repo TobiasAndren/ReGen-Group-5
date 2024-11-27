@@ -51,6 +51,7 @@ h2 {
 }
 
 input {
+    border-radius: 0;
     height: 3.8rem;
     width: 24rem;
     font-size: 1.25rem;
