@@ -1,5 +1,5 @@
 .footer {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     font-family: "IBM Plex Sans", sans-serif;
     background-color: var(--darker);
@@ -44,7 +44,7 @@ footer img:hover {
 }
 
 footer img {
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
     margin-top: 6rem;
 }
 
@@ -70,7 +70,7 @@ footer a:hover{
 
 .smallContainer{
     width: 100vw;
-    margin-top: 9rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
