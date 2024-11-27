@@ -20,3 +20,19 @@ document.querySelector('.lang-toggle').addEventListener('click', function () {
     }
 });
 
+// Scroll back to top function 
+
+const scrollUp = document.querySelector('.scroll-up');
+
+window.addEventListener('scroll', () => {
+
+    const scrollY = window.scrollY;
+
+    if (scrollY > window.innerHeight) {
+        scrollUp.style.visibility = 'visible';
+        scrollUp.style.opacity = '1';
+    } else {
+        scrollUp.style.visibility = 'hidden';
+        scrollUp.style.opacity = '0';
+    }
+})

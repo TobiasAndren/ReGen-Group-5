@@ -69,8 +69,43 @@
 
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.scroll-up {
+    background-color: #26CCA6;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 4rem;
+    right: 2.5rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s; 
+}
+
+.scroll-up img {
+    width: 1.75rem;
+}
+
+.scroll-up:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .scroll-up {
+        display: none;
+    }
 }
