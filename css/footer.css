@@ -44,7 +44,7 @@ footer img:hover {
 }
 
 footer img {
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
     margin-top: 6rem;
 }
 
@@ -70,7 +70,7 @@ footer a:hover{
 
 .smallContainer{
     width: 100vw;
-    height: 14rem;
+    margin-top: 9rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -118,7 +118,7 @@ div.locationContainer small{
     }
 
     .smallContainer {
-        height: 7rem;
+        margin-top: 4rem;
     }
 
     footer img {
