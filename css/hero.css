@@ -72,11 +72,11 @@
 
     @media (max-width: 768px) {
 
-         /*Turn this on for mobile deployment*/
+         /*Turn this on for mobile deployment
         .hero {
             height: calc(100vh - 7rem);
         } 
-        
+        */
         
         .hero h1 {
             font-size: 2rem;
