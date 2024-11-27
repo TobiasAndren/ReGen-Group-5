@@ -14,11 +14,9 @@ document.querySelector('.lang-toggle').addEventListener('click', function () {
     const seFlag = document.getElementById('se-flag');
 
     if (ukFlag.classList.contains('visible')) {
-        ukFlag.classList.remove('visible');
-        seFlag.classList.add('visible');
+        window.location.href = 'index.html';
     } else {
-        seFlag.classList.remove('visible');
-        ukFlag.classList.add('visible');
+        window.location.href = 'indexen.html';
     }
 });
 
