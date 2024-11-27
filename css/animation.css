@@ -6,7 +6,15 @@
     align-items: center;
 }
 
-.animation {
+.animation-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animation-mobile {
+    display: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -19,7 +27,13 @@
         height: 75%;
     }
 
-    .animation {
+    .animation-desktop {
+        display: none;
+        object-fit: contain;
+    }
+
+    .animation-mobile {
+        display: block;
         object-fit: contain;
     }
 }
